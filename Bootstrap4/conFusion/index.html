@@ -36,14 +36,19 @@
     
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-8">
+            <div class="row row-header align-items-center">
+                <div class="col-6 col-sm-6 flex-first">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
-                </div>                
+                <!-- <div class="col-6 col-sm-6"> -->
+                    <div class="col-3 col-sm-3">
+                        <img src="img/logo.png" class="img-fluid">
+                    </div>
+                    <div class="col-3 col-sm-3 flex-last">
+                        <a href="#reserve-form" class="btn btn-primary btn-sm btn-block" role="button">Reserve Table</a>
+                    </div>
+                <!-- </div>                 -->
             </div>
         </div>
     </header>
@@ -110,7 +115,7 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
+        <div class="row row-content align-items-center" id="reserve-form">
             <!-- <div class="col-12 col-sm-6"> -->
             <div class="col col-sm-8">
                 <div class="card">
