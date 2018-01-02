@@ -82,3 +82,15 @@ body {
     position: absolute;
     top: -9999px;
 }
+
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#carousel-button {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
