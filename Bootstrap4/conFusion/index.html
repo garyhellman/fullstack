@@ -47,11 +47,12 @@
 
 <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
+        <form id="loginForm">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Login </h4>
-                <button type="button" class="close">&times;</button>
+                <button type="button" class="close" id="loginClose-button">&times;</button>
             </div>
             <div class="modal-body">
                 <form class="form-inline">
@@ -73,62 +74,64 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-sm">Cancel</button>
+                <button type="button" class="btn btn-default btn-sm" id="login-cancel-button">Cancel</button>
                 <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
             </div>
         </div>
+        </form>
     </div>
 </div>
 
 <div id="reserveModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
+        <form id="resvForm">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Reserve a Table </h4>
-                <button type="button" class="close" >&times;</button>
+                <button type="button" id="resvClose-button" class="close" >&times;</button>
             </div>
 
             <div class="modal-body">
                 <div class="container-fluid">
-                    <form>
+                    <!--<form id="resvForm">-->
                         <div class="row">
                             <div class="col-md-10 ">
                                 <label for="numguests" class="col-md-2 col-form-label">Number of Guests</label>
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="numguests"
-                                               id="inlineradio1" value="option1"> 1
+                                               id="inlineradio1" value="01guests"> 1
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="numguests"
-                                               id="inlineradio2" value="option2"> 2
+                                               id="inlineradio2" value="02guests"> 2
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="numguests"
-                                               id="inlineradio3" value="option3"> 3
+                                               id="inlineradio3" value="03guests"> 3
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="numguests"
-                                               id="inlineradio4" value="option4"> 4
+                                               id="inlineradio4" value="04guests"> 4
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="numguests"
-                                               id="inlineradio5" value="option5"> 5
+                                               id="inlineradio5" value="05guests"> 5
                                     </label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="numguests"
-                                               id="inlineradio6" value="option6"> 6
+                                               id="inlineradio6" value="06guests"> 6
                                     </label>
                                 </div>
                             </div>
@@ -169,14 +172,15 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    <!--</form>-->
                 </div>
             </div>
             <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-secondary" >Cancel</button>
+                <button type="button" class="btn btn-secondary" id="resv-cancel-button">Cancel</button>
                 <button type="submit" class="btn btn-primary">Reserve</button>
             </div>
         </div>
+        </form>
     </div>
 </div>
 
@@ -193,8 +197,8 @@
                 <img src="img/logo.png" class="img-fluid">
             </div>
             <div class="col-12 col-sm-3 flex-last">
-                <a href="#reserveModal" class="btn btn-primary btn-sm btn-block" role="button" id="reserve-button"
-                >Reserve Table</a>
+                <a href="#reserveModal" class="btn btn-primary btn-sm btn-block" role="button"
+                   id="reserve-button">Reserve Table</a>
             </div>
         </div>
     </div>

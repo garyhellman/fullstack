@@ -2,6 +2,9 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
+// $modal-cross: #FFFAF0;
+// floral white is either #FFFAF) or #FBFAF6  http://www.color-hex.com/color/fffaf0  http://www.htmlcsscolor.com/hex/FBFAF6
+$floral-white: #FBFAF6;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -69,4 +72,22 @@ body{
   right:0px;
   position: absolute;
   bottom: 0px;
+}
+
+.modal-body {
+  background-color: $background-pale;
+}
+
+.modal-header {
+  background-color: $background-dark;
+  color:$floral-white;
+}
+
+.modal-header .close {
+  background-color: $background-dark;
+  color: $floral-white;
+}
+
+.modal-footer {
+  background-color: $background-light;
 }
