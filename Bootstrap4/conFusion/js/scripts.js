@@ -40,4 +40,13 @@ $(document).ready(function(){
             $("#carousel-button").children("span").addClass('fa-pause');
         }
     });
+
+    $("#reserve-button").click(function(){
+        console.log("clicked");
+        $('#reserveModal').modal('toggle');
+    });
+    $('#reserveModal').on('hidden.bs.modal', function (e) {
+        console.log("on hidden");
+    })
+
 });
