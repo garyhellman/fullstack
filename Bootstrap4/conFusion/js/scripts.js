@@ -99,7 +99,7 @@ $(document).ready(function(){
     });
 
 
-
+    // please do not grade
     // just for fun - https://stackoverflow.com/questions/1960240/jquery-ajax-submit-form and others
     $('#resvForm').on('submit', function(ev) {
         console.log(" submit-button clicked");
@@ -107,17 +107,13 @@ $(document).ready(function(){
         // $('#reserveModal').modal({
         //     show: false
         // });
-
-
         var data = $(this).serialize();
         json_data = JSON.stringify(data);
         //
         console.log(json_data);
 //        $("#results").text(json_data);
 //        $(".modal-body").text(json_data);
-
         // $("#results").text(data);
-
         // this prevents the submit
         // if commented out will redirect with query parameters
         ev.preventDefault();
@@ -129,17 +125,12 @@ $(document).ready(function(){
         // $('#reserveModal').modal({
         //     show: false
         // });
-
-
         var login_data = $(this).serialize();
         var json_login = JSON.stringify(login_data);
-
         console.log(json_login);
 //        $("#results").text(json_data);
 //        $(".modal-body").text(json_data);
-
         // $("#results").text(data);
-
         // this prevents the submit
         // if commented out will redirect with query parameters
 //        ev.preventDefault();

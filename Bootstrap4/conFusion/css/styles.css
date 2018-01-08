@@ -58,10 +58,8 @@ body {
 .modal-header {
   background-color: #512DA8;
   color: #FBFAF6; }
-
-.modal-header .close {
-  background-color: #512DA8;
-  color: #FBFAF6; }
+  .modal-header .close {
+    color: #FBFAF6; }
 
 .modal-footer {
   background-color: #9575CD; }

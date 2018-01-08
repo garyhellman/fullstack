@@ -81,11 +81,10 @@ body{
 .modal-header {
   background-color: $background-dark;
   color:$floral-white;
-}
 
-.modal-header .close {
-  background-color: $background-dark;
-  color: $floral-white;
+  .close {
+    color:$floral-white;
+  }
 }
 
 .modal-footer {
